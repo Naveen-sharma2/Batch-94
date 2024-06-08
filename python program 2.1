@@ -1,0 +1,1278 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "c859ba77",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the basic salary:15000\n",
+      "Gross Salary =  24000.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-1 ####\n",
+    "\n",
+    "basic_salary=int(input(\"Enter the basic salary:\"))\n",
+    "da=0.4*basic_salary;\n",
+    "hra=0.2*basic_salary;\n",
+    "gross_salary=basic_salary+da+hra;\n",
+    "print(\"Gross Salary = \",gross_salary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ea14e985",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter The Kilometer : 12\n",
+      "Kilometers :  12.0\n",
+      "Meters  :  12000.0\n",
+      "Centimeters :  1200000.0\n",
+      "Inches :  472440.94488188974\n",
+      "Feet :  39370.07874015748\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-2 ####\n",
+    "\n",
+    "'''\n",
+    "Formulas:\n",
+    "meters = kilometers × 1000\n",
+    "centimeters = meters × 100\n",
+    "inches = centimeters ÷ 2.54\n",
+    "feet = inches ÷ 12\n",
+    "'''\n",
+    "km=float(input(\"Enter The Kilometer : \"));\n",
+    "m=km*1000;\n",
+    "cm=m*100;\n",
+    "i=cm/2.54;\n",
+    "ft=i/12;\n",
+    "print(\"Kilometers : \",km);\n",
+    "print(\"Meters  : \",m);\n",
+    "print(\"Centimeters : \",cm);\n",
+    "print(\"Inches : \",i);\n",
+    "print(\"Feet : \",ft);"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "e3cb716d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the marks 1:92\n",
+      "Enter the mark 2:56\n",
+      "Enter the mark 3:89\n",
+      "Enter the mark 4:97\n",
+      "Enter the mark 5:89\n",
+      "Total Marks: 423\n",
+      "Percentage Marks: 84.6\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-3 ####\n",
+    "\n",
+    "m1=int(input(\"Enter the marks 1:\"))\n",
+    "m2=int(input(\"Enter the mark 2:\"))\n",
+    "m3=int(input(\"Enter the mark 3:\"))\n",
+    "m4=int(input(\"Enter the mark 4:\"))\n",
+    "m5=int(input(\"Enter the mark 5:\"))\n",
+    "total=m1+m2+m3+m4+m5\n",
+    "per=total/5\n",
+    "print(\"Total Marks:\",total)\n",
+    "print(\"Percentage Marks:\",per)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "00fe2543",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Temperature:34.45\n",
+      "Temparture in Centigrade= 1.3611111111111127\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-4 ####\n",
+    "\n",
+    "\"\"\"\n",
+    "centigrade = 5/9 * (F-32)\n",
+    "\"\"\"\n",
+    "fr=float(input(\"Enter the Temperature:\"))\n",
+    "cent=5.0/9.0*(fr-32)\n",
+    "print(\"Temparture in Centigrade=\",cent)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "70b30f05",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Lenth of rectangle:10\n",
+      "Enter the Breadth of rectangle:12\n",
+      "Enter the Redius of Circle:23\n",
+      "Area of Rectangle = 120\n",
+      "Perimeter of Rectangle = 44\n",
+      "Area of Circle = 1661.06\n",
+      "Circum of Circle = 144.44\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-5 ####\n",
+    "\n",
+    "'''\n",
+    "Area of Rectangle=l*b\n",
+    "Perimeter of Rectangle=2*(l+b)\n",
+    "Area of Circule=PI*r*r(PI=3.14)\n",
+    "Circum of a Circule=2*PI*r\n",
+    "'''\n",
+    "len=int(input(\"Enter the Lenth of rectangle:\"))\n",
+    "bre=int(input(\"Enter the Breadth of rectangle:\"))\n",
+    "r=int(input(\"Enter the Redius of Circle:\"))\n",
+    "area1=len*bre\n",
+    "perimeter=2*(len+bre)\n",
+    "area2=3.14*r*r\n",
+    "circum=2*3.14*r\n",
+    "print(\"Area of Rectangle =\",area1)\n",
+    "print(\"Perimeter of Rectangle =\",perimeter)\n",
+    "print(\"Area of Circle =\",area2)\n",
+    "print(\"Circum of Circle =\",circum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "452348d7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the C Values:10\n",
+      "Enter the D Values:30\n",
+      "Before C Values :  10\n",
+      "Before D Values :  30\n",
+      "After C Values: 30\n",
+      "After D Values: 10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-6 ####\n",
+    "\n",
+    "c=int(input(\"Enter the C Values:\"))\n",
+    "d=int(input(\"Enter the D Values:\"))\n",
+    "print(\"Before C Values : \",c)\n",
+    "print(\"Before D Values : \",d)\n",
+    "a=c\n",
+    "c=d\n",
+    "d=a\n",
+    "print(\"After C Values:\",c)\n",
+    "print(\"After D Values:\",d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "92da8c18",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the five digits Number :23754\n",
+      "sum of the Digits =  21\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-7 ####\n",
+    "\n",
+    "num=int(input(\"Enter the five digits Number :\"))\n",
+    "sum=0\n",
+    "a=num%10\n",
+    "n=num//10\n",
+    "sum=sum+a\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "sum=sum+a\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "sum=sum+a\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "sum=sum+a\n",
+    " \n",
+    "a=n%10\n",
+    "sum=sum+a;\n",
+    "print(\"sum of the Digits = \",sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "ed09079f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the five digits Number:23742\n",
+      "Reverse Five digits = 24732\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-8 ####\n",
+    "\n",
+    "n=int(input(\"Enter the five digits Number:\"))\n",
+    "revnum=0\n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "revnum=revnum+a*10000\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "revnum=revnum+a*1000\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "revnum=revnum+a*100\n",
+    " \n",
+    "a=n%10\n",
+    "n=n//10\n",
+    "revnum=revnum+a*10\n",
+    " \n",
+    "a=n%10\n",
+    "revnum=revnum+a\n",
+    " \n",
+    "print(\"Reverse Five digits =\",revnum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "584fcdcb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the four Digits Number :2315\n",
+      "Sum of First and Last digits = 7\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-9 ####\n",
+    "\n",
+    "n=int(input(\"Enter the four Digits Number :\"))\n",
+    "sum=0\n",
+    "a=n//1000\n",
+    "sum=sum+a\n",
+    "a=n%10\n",
+    "sum=sum+a\n",
+    "print(\"Sum of First and Last digits =\",sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "65ca6880",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total Population          :  80000\n",
+      "Total Mens                :  41600.0\n",
+      "Total Womens              :  38400.0\n",
+      "Total Literacy            :  38400.0\n",
+      "Total Literacy Mens       :  14560.0\n",
+      "Total Literacy Womens     :  23840.0\n",
+      "Total Not Literacy Mens   :  27040.0\n",
+      "Total Not Literacy Womens :  14560.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-10 ####\n",
+    "\n",
+    "pop=80000\n",
+    "popmen=(52*pop)/100\n",
+    "popwomen=pop-popmen\n",
+    "poplit=(48*pop)/100\n",
+    "litmen=(35*popmen)/100\n",
+    "litwomen= poplit-litmen\n",
+    "unlitmen=popmen-litmen\n",
+    "unlitwomen=popwomen-litwomen\n",
+    "print(\"Total Population          : \",pop)\n",
+    "print(\"Total Mens                : \",popmen)\n",
+    "print(\"Total Womens              : \",popwomen)\n",
+    "print(\"Total Literacy            : \",poplit)\n",
+    "print(\"Total Literacy Mens       : \",litmen)\n",
+    "print(\"Total Literacy Womens     : \",litwomen)\n",
+    "print(\"Total Not Literacy Mens   : \",unlitmen)\n",
+    "print(\"Total Not Literacy Womens : \",unlitwomen)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "c3496dca",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Amount to be Withdrawn :23570\n",
+      "No of Hundred Notes : 235\n",
+      "No of Fifty Notes : 1\n",
+      "No of Ten Notes : 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-11 ####\n",
+    "\n",
+    "amt = int(input(\"Enter the Amount to be Withdrawn :\"))\n",
+    "hundred = amt//100\n",
+    "amt = amt%100\n",
+    "fifty = amt//50\n",
+    "amt = amt%50\n",
+    "ten = amt//10\n",
+    "print(\"No of Hundred Notes :\",hundred)\n",
+    "print(\"No of Fifty Notes :\",fifty)\n",
+    "print(\"No of Ten Notes :\",ten)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "7f42d3a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Selling Price :2350\n",
+      "Enter the Profit :100\n",
+      "Cost Price of Per Item : 150.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-12 ####\n",
+    "\n",
+    "sp = float(input(\"Enter the Selling Price :\"))\n",
+    "profit = float(input(\"Enter the Profit :\"))\n",
+    "cp = sp - profit\n",
+    "cp = cp // 15\n",
+    "print(\"Cost Price of Per Item :\",cp)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "6d20da77",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Five Digits :12345\n",
+      "Old Number : 12345\n",
+      "New Number : 23456\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'\\nnum = int(input(\"Enter the Five Digits :\"))\\nsum = 0\\na = (num // 10000)+1\\nnum = num % 10000\\nsum=sum+a;\\n \\na = (num // 1000)+1\\nnum = num % 1000\\nsum = (sum*10)+a\\n \\na = (num // 100)+1\\nnum = num % 100\\nsum = (sum*10)+a\\n \\n \\na = (num // 10)+1\\nnum = num % 10\\nsum = (sum*10)+a\\n \\n \\na = num+1\\nsum = (sum*10)+a\\nprint(sum)\\n'"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#### ex-13 ####\n",
+    "\n",
+    "num = int(input(\"Enter the Five Digits :\"))\n",
+    "onum=num\n",
+    "sum = 0\n",
+    "a = (num // 10000)+1\n",
+    "num = num % 10000\n",
+    "sum=sum+(a*10000);\n",
+    " \n",
+    "a = (num // 1000)+1\n",
+    "num = num % 1000\n",
+    "sum = sum+(a*1000)\n",
+    " \n",
+    "a = (num // 100)+1\n",
+    "num = num % 100\n",
+    "sum = sum+(a*100)\n",
+    " \n",
+    " \n",
+    "a = (num // 10)+1\n",
+    "num = num % 10\n",
+    "sum = sum+(a*10)\n",
+    " \n",
+    " \n",
+    "a = num+1\n",
+    "sum = sum+a\n",
+    "print(\"Old Number :\",onum)\n",
+    "print(\"New Number :\",sum)\n",
+    " \n",
+    "\"\"\"\n",
+    "num = int(input(\"Enter the Five Digits :\"))\n",
+    "sum = 0\n",
+    "a = (num // 10000)+1\n",
+    "num = num % 10000\n",
+    "sum=sum+a;\n",
+    " \n",
+    "a = (num // 1000)+1\n",
+    "num = num % 1000\n",
+    "sum = (sum*10)+a\n",
+    " \n",
+    "a = (num // 100)+1\n",
+    "num = num % 100\n",
+    "sum = (sum*10)+a\n",
+    " \n",
+    " \n",
+    "a = (num // 10)+1\n",
+    "num = num % 10\n",
+    "sum = (sum*10)+a\n",
+    " \n",
+    " \n",
+    "a = num+1\n",
+    "sum = (sum*10)+a\n",
+    "print(sum)\n",
+    "\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e53efb96",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### Part 2 ######"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8b7622c0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### Part 2 ######"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "069a4007",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Quantity Purchased :14\n",
+      "Enter the Amount Per Item :7\n",
+      "Total Expenses is : 88.2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-1 ####\n",
+    "\n",
+    "qty = int(input(\"Enter the Quantity Purchased :\"))\n",
+    "amt = float(input(\"Enter the Amount Per Item :\"))\n",
+    "if(qty>10):\n",
+    "    total = qty * amt; \n",
+    "    total = total- (total * 0.1)\n",
+    "else:\n",
+    "    total = qty * amt\n",
+    " \n",
+    "print(\"Total Expenses is :\",total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "84d9c345",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Current Year :2022\n",
+      "Enter the Year of Joining :1999\n",
+      "Bonus of Rs : 2500 /-\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-2 ####\n",
+    "\n",
+    "current_year=int(input(\"Enter the Current Year :\"))\n",
+    "join_year=int(input(\"Enter the Year of Joining :\"))\n",
+    "diff=current_year-join_year\n",
+    "if(diff>3):\n",
+    "    print(\"Bonus of Rs : 2500 /-\");\n",
+    "else:\n",
+    "    print(\"No Bonus..\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "e42a93cd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Basic Salary :15000\n",
+      "Gross Salary Rs : 30200.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-3 ####\n",
+    "\n",
+    "bs = float(input(\"Enter the Basic Salary :\"))\n",
+    "if(bs<1500):\n",
+    "    hra=bs*0.1\n",
+    "    da=bs*0.9\n",
+    "else:\n",
+    "    hra=500\n",
+    "    da=bs*0.98\n",
+    " \n",
+    "gs=bs + hra + da\n",
+    "print(\"Gross Salary Rs :\", gs)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "3469e9c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Mark Subject 1 :91\n",
+      "Enter the Mark Subject 2 :56\n",
+      "Enter the Mark Subject 3 :88\n",
+      "Enter the Mark Subject 4 :89\n",
+      "Enter the Mark Subject 5 :90\n",
+      "Total : 414\n",
+      "Percentage : 82.8\n",
+      "First Division..\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-4 ####\n",
+    "\n",
+    "m1=int(input(\"Enter the Mark Subject 1 :\"))\n",
+    "m2=int(input(\"Enter the Mark Subject 2 :\"))\n",
+    "m3=int(input(\"Enter the Mark Subject 3 :\"))\n",
+    "m4=int(input(\"Enter the Mark Subject 4 :\"))\n",
+    "m5=int(input(\"Enter the Mark Subject 5 :\"))\n",
+    "total=m1+m2+m3+m4+m5\n",
+    "per=total/5\n",
+    "print(\"Total :\",total)\n",
+    "print(\"Percentage :\",per)\n",
+    "if(per>=60):\n",
+    "    print(\"First Division..\")\n",
+    "elif(per>=50 and per<=59):\n",
+    "    print(\"Second Division..\")\n",
+    "elif(per>=40 and per<=49):\n",
+    "    print(\"Third Division..\")\n",
+    "else:\n",
+    "    print(\"Fail..\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "70f8f5c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Age :25\n",
+      "Enter the Gender M/F :M\n",
+      "Enter the Marital Status U/M :M\n",
+      "Driver should be Insured\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "'\\nage = int(input(\"Enter the Age :\"))\\nsex = input(\"Enter the Gender M/F :\")\\nstatus = input(\"Enter the Marital Status U/M :\")\\nif ( ( status == \\'M\\') or ( status == \\'U\\' and sex == \\'M\\' and age > 30 ) or( status == \\'U\\' and sex == \\'F\\' and age > 25 ) ):\\n\\tprint( \"Driver should be Insured\" )\\nelse:\\n\\tprint( \"Driver should not be Insured\" )\\n \\n'"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#### ex-5 ####\n",
+    "\n",
+    "age = int(input(\"Enter the Age :\"))\n",
+    "sex = input(\"Enter the Gender M/F :\")\n",
+    "status = input(\"Enter the Marital Status U/M :\")\n",
+    "if( status == 'M' or status == 'm'):\n",
+    "    print( \"Driver should be Insured\" )\n",
+    "elif( status == 'U' and sex == 'M' and age > 30 or status == 'u' and sex == 'm' and age > 30 ):\n",
+    "    print( \"Driver should be Insured\" )\n",
+    "elif( status == 'U' and sex == 'F' and age > 25 or status == 'u' and sex == 'f' and age > 25 ):\n",
+    "    print( \"Driver should be Insured\" )\n",
+    "else:\n",
+    "    print( \"Driver should not be Insured\" )\n",
+    "\"\"\"\n",
+    "age = int(input(\"Enter the Age :\"))\n",
+    "sex = input(\"Enter the Gender M/F :\")\n",
+    "status = input(\"Enter the Marital Status U/M :\")\n",
+    "if ( ( status == 'M') or ( status == 'U' and sex == 'M' and age > 30 ) or( status == 'U' and sex == 'F' and age > 25 ) ):\n",
+    "    print( \"Driver should be Insured\" )\n",
+    "else:\n",
+    "    print( \"Driver should not be Insured\" )\n",
+    " \n",
+    "\"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "25942f0a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Gender f/m :m\n",
+      "Enter the Years of Service :12\n",
+      "Enter the Qualification (Graduate(0) , Post-Graduate(1)) :0\n",
+      "Salary :  10000\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-6 ####\n",
+    "\n",
+    "gen = input(\"Enter the Gender f/m :\")\n",
+    "yos = int(input(\"Enter the Years of Service :\"))\n",
+    "qual = int(input(\"Enter the Qualification (Graduate(0) , Post-Graduate(1)) :\"))\n",
+    "if(gen=='m' and yos>=10 and qual==1):\n",
+    "    salary = 15000\t\n",
+    "    print(\"Salary : \" , salary)\n",
+    "elif( (gen=='m' and yos>=10 and qual==0) or ( gen=='m' and yos<10 and qual==1 ) or ( gen=='f' and yos<10 and qual==1)):\n",
+    "    salary = 10000\t\n",
+    "    print(\"Salary : \" , salary)\n",
+    "elif( gen=='m' and yos<10 and qual==0):\n",
+    "    salary = 7000\t\n",
+    "    print(\"Salary : \" , salary)\n",
+    "elif( gen=='f' and yos>=10 and qual==1):\n",
+    "    salary = 12000\t\n",
+    "    print(\"Salary : \" , salary)\n",
+    "elif( gen=='f' and yos>=10 and qual==0):\n",
+    "    salary = 9000\t\n",
+    "    print(\"Salary : \" , salary)\n",
+    "elif( gen=='f' and yos<10 and qual==0):\n",
+    "    salary = 6000\t\n",
+    "    print(\"Salary : \" , salary)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "6c1e70f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the cost Price of an Item :220\n",
+      "Enter the Selling Price of an Item :230\n",
+      "Profit : 10.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-7 ####\n",
+    "\n",
+    "cost_price=float(input(\"Enter the cost Price of an Item :\"))\n",
+    "selling_price=float(input(\"Enter the Selling Price of an Item :\"))\n",
+    "if (selling_price > cost_price):\n",
+    "    profit = selling_price - cost_price\n",
+    "    print(\"Profit :\",profit)\n",
+    "elif( cost_price > selling_price):\n",
+    "    loss = cost_price - selling_price\n",
+    "    print(\"Loss :\",loss)\n",
+    "else:\n",
+    "    print(\"No Profit No Loss\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7f6b47c7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number :34\n",
+      "34 is Even Number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-8 ####\n",
+    "\n",
+    "num = int(input(\"Enter the Number :\"))\n",
+    "if(num%2==0):\n",
+    "    print(num,\"is Even Number\")\n",
+    "else:\n",
+    " \n",
+    "   print(num,\"is Odd Number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "c8eb999b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number :12321\n",
+      "Eqaul..\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-9 ####\n",
+    "\n",
+    "num = int(input(\"Enter the Number :\"))\n",
+    "a=num\n",
+    "sum=0\n",
+    "while(num>0):\n",
+    "    rem=num%10\n",
+    "    sum=(sum*10)+rem\n",
+    "    num=num//10\n",
+    "if(a==sum):\n",
+    "    print(\"Eqaul..\")\n",
+    "else:\n",
+    "\tprint(\"Not Eqaul..\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "5868a4b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Age of Ram :23\n",
+      "Enter the Age of Shyam :21\n",
+      "Enter the Age of Ajay :25\n",
+      "The Youngest Age is Shyam\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-10 ####\n",
+    "\n",
+    "age1 = int(input(\"Enter the Age of Ram :\"))\n",
+    "age2 = int(input(\"Enter the Age of Shyam :\"))\n",
+    "age3 = int(input(\"Enter the Age of Ajay :\"))\n",
+    "if(age1<age2 and age1<age3):\n",
+    "    print(\"The Youngest Age is Ram\")\n",
+    "elif(age2<age1 and age2<age3):\n",
+    "    print(\"The Youngest Age is Shyam\")\n",
+    "else:\n",
+    "    print(\"The Youngest Age is Ajay\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "ba76518a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Triangle Side-1 :40\n",
+      "Enter the Triangle Side-2 :50\n",
+      "Enter the Triangle Side-3 :60\n",
+      "Triangle Not Valid..\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-11 ####\n",
+    "\n",
+    "s1 = int(input(\"Enter the Triangle Side-1 :\"))\n",
+    "s2 = int(input(\"Enter the Triangle Side-2 :\"))\n",
+    "s3 = int(input(\"Enter the Triangle Side-3 :\"))\n",
+    "sum = s1+s2+s3\n",
+    "if(sum==180):\n",
+    "    print(\"Triangle Valid..\")\n",
+    "else:\n",
+    "    print(\"Triangle Not Valid..\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "e4f843f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number :34\n",
+      "Absolute Number : 34\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-12 ####\n",
+    "\n",
+    "num = int(input(\"Enter the Number :\"))\n",
+    "#print(\"Absolute Number :\",abs(num))\n",
+    "if(num<0):\n",
+    "    num = (-1)*num\n",
+    "print(\"Absolute Number :\",num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "0ce820d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Length : 12\n",
+      "Enter the Breadth : 13\n",
+      "Area of Rectangle : 156.0\n",
+      "Perimeter of Rectangle : 50.0\n",
+      "Area of rectangle is greater than  Perimeter\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-13 ####\n",
+    "\n",
+    "len = float(input(\"Enter the Length : \"))\n",
+    "bre = float(input(\"Enter the Breadth : \"))\n",
+    "area = len * bre;\n",
+    "perimeter = 2 * (len+bre)\n",
+    "print(\"Area of Rectangle :\", area)\n",
+    "print(\"Perimeter of Rectangle :\", perimeter)\n",
+    "if (area>perimeter):\n",
+    "    print(\"Area of rectangle is greater than  Perimeter\")\n",
+    "else:\n",
+    "    print(\"Perimeter of rectangle is greater than Area\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "36a7e17c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Year :2000\n",
+      "Given Year is a leap Year\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-14 ####\n",
+    "\n",
+    "year = int(input(\"Enter the Year :\")) \n",
+    "if (year%4 == 0 and year%100 != 0) or (year%400 == 0):\n",
+    "    print(\"Given Year is a leap Year\")\n",
+    "else:  \n",
+    "    print (\"Given Year is not a leap Year\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "c0253170",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the value of Hardness : 23\n",
+      "Enter the value of Carbon Content: 45\n",
+      "Enter the value of Tensile Strength: 26\n",
+      "The Grade of Steel  : 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-15 ####\n",
+    "\n",
+    "\"\"\"\n",
+    "    hs = Hardness of steel\n",
+    "    cc = Carbon content\n",
+    "    ts = Tensile strength\n",
+    "    \"\"\"\n",
+    "hs_f=0\n",
+    "cc_f=0\n",
+    "ts_f=0\n",
+    "hs = float(input(\"Enter the value of Hardness : \"))\n",
+    "cc = float(input(\"Enter the value of Carbon Content: \"))\n",
+    "ts = float(input(\"Enter the value of Tensile Strength: \"))\n",
+    "if (hs>50):\n",
+    "    hs_f=1\n",
+    "if (cc<0.7):\n",
+    "    cc_f=1\n",
+    "if (ts>5600):\n",
+    "    ts_f=1\n",
+    "if(hs_f==0 and cc_f==0 and ts_f==0):\n",
+    "    grade = 5\n",
+    "elif(hs_f==1 or cc_f==1 or ts==1):\n",
+    "    grade = 6\n",
+    "elif(hs_f==1 and cc_f==0 and ts_f==1):\n",
+    "    grade = 7\n",
+    "elif(hs_f==0 and cc_f==1 and ts_f==1):\n",
+    "    grade = 8\n",
+    "elif(hs_f==1 and cc_f==1 and ts_f==0):\n",
+    "    grade = 9\n",
+    "#elif(hs_f==1 and cc_f==1 and ts_f==1):\n",
+    "else:\n",
+    "    grade = 10\n",
+    " \n",
+    "print(\"The Grade of Steel  :\", grade)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "ee253a8c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number of Days :123\n",
+      "Fine Amount Pay to Rs : 615\n",
+      "Your Membership would be Cancelled..\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-16 ####\n",
+    "\n",
+    "days = int(input(\"Enter the Number of Days :\"))\n",
+    "if (days>0 and days<= 5):\n",
+    "    amt = 0.50 * days\n",
+    "    print(\"Fine Amount Pay to Rs :\", amt)\n",
+    " \n",
+    "elif(days >= 6 and days <= 10):\n",
+    "    amt = 1 * days\n",
+    "    print(\"Fine Amount Pay to Rs :\", amt)\n",
+    " \n",
+    "elif (days > 10):\n",
+    "    amt = 5 * days\n",
+    "    print(\"Fine Amount Pay to Rs :\", amt)\n",
+    "    if (days > 30):\n",
+    "    print(\"Your Membership would be Cancelled..\")\n",
+    "else:\n",
+    "    print(\"Invalid\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "b8057dbe",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Time Taken by Worker : 4\n",
+      "Worker Needs to Improve Speed..\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-17 ####\n",
+    "\n",
+    "hrs = float(input(\"Enter the Time Taken by Worker : \"))\n",
+    "if(hrs>=2 and hrs<=3):\n",
+    "    print(\"Worker is Highly Efficient..\")\n",
+    "elif(hrs>3 and hrs <=4):\n",
+    "    print(\"Worker Needs to Improve Speed..\")\n",
+    "elif(hrs>4 and hrs <=5):\n",
+    "    print(\"Give Training to Worker..\")\n",
+    "else:\n",
+    "    print(\"Worker is Leave the Company..\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f4dfa16a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### Task 3 ####"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8d8fef9f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### Task 3 ####"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c9153e9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#### Task 3 ####"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "a37ef42f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number :10\n",
+      "1\n",
+      "2\n",
+      "5\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-1 ####\n",
+    "\n",
+    "x = int(input(\"Enter the Number :\"))\n",
+    "for i in range(1, x + 1):\n",
+    "       if x % i == 0:\n",
+    "           print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "2330b22a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter a number: 23\n",
+      "This is a Prime Number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-2 ####\n",
+    "\n",
+    "\"\"\"num = int(input(\"Enter the Number :\"))\n",
+    "if num > 1:\n",
+    " \n",
+    "    for i in range(2, num+1):\n",
+    "       if (num % i) == 0:\n",
+    "            print(num, \"is not a prime number\")\n",
+    "            break\n",
+    "    else:\n",
+    "        print(num, \"is a prime number\")\n",
+    " \n",
+    "else:\n",
+    "    print(num, \"is not a prime number\")\n",
+    " \n",
+    "\"\"\"\n",
+    "x = int(input(\"Enter a number: \"))\n",
+    "sum=0\n",
+    "for i in range(1, x + 1):\n",
+    "       if x % i == 0:\n",
+    "           sum=sum+1\n",
+    "if(sum==2):\n",
+    "    print(\"This is a Prime Number\")\n",
+    "else:\n",
+    "    print(\"This is a Not Prime Number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "1fa1c1f4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the Number :153\n",
+      "153 is a Armstrong Number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-3 ####\n",
+    "\n",
+    "num = int(input(\"Enter the Number :\"))\n",
+    "a=num\n",
+    "sum=0\n",
+    "while(num>0):\n",
+    "    rem=num%10\n",
+    "    sum=sum+(rem*rem*rem)\n",
+    "    num=num//10\n",
+    "if(sum==a):\n",
+    "    print(a, \"is a Armstrong Number\")\n",
+    "else:\n",
+    "    print(a, \"is a Not Armstrong Number\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "3c95d4db",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "153 is a Armstrong Number\n",
+      "370 is a Armstrong Number\n",
+      "371 is a Armstrong Number\n",
+      "407 is a Armstrong Number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#### ex-4 ####\n",
+    "\n",
+    "for i in range(100,999):\n",
+    "    a=i\n",
+    "    sum=0\n",
+    "    while(i>0):\n",
+    "        rem=i%10\n",
+    "        sum=sum+(rem*rem*rem)\n",
+    "        i=i//10\n",
+    "    if(sum==a):\n",
+    "    print(a, \"is a Armstrong Number\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
